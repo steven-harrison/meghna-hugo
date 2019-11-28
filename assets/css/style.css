@@ -8,7 +8,9 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 */
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
+
 
 html {
   background-color: #353b43;
@@ -33,6 +35,11 @@ h6 {
   color: #afbac4;
 }
 
+h1 {
+  font-family: "Quattrocento", serif;
+
+}
+
 p {
   font-family: "Quattrocento Sans", sans-serif;
 }
@@ -51,12 +58,12 @@ pre {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #57cbcc;
+  background: #355e3b;
 }
 
 ::selection {
   color: #fff;
-  background: #57cbcc;
+  background: #355e3b;
 }
 
 hr {
@@ -118,7 +125,7 @@ a:hover {
 
 .btn-transparent:hover,
 .btn-transparent:focus {
-  background-color: #57cbcc;
+  background-color: #355e3b;
   border: 1px solid transparent;
   color: #fff;
 }
@@ -161,7 +168,7 @@ a:hover {
   position: absolute;
   top: -4px;
   width: 50px;
-  background-color: #57cbcc;
+  background-color: #355e3b;
 }
 
 .color {
@@ -231,11 +238,11 @@ a:hover {
 
 a:focus,
 a:hover {
-  color: #57cbcc;
+  color: #355e3b;
 }
 
 .btn-main {
-  background: #57cbcc;
+  background: #355e3b;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -320,7 +327,7 @@ a:hover {
 .sk-cube-grid .sk-cube {
   width: 33%;
   height: 33%;
-  background-color: #57cbcc;
+  background-color: #355e3b;
   float: left;
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
   animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
@@ -413,7 +420,7 @@ a:hover {
 }
 
 .title h2 span {
-  color: #57cbcc;
+  color: #355e3b;
 }
 
 .title p {
@@ -458,7 +465,7 @@ a:hover {
 }
 
 .header-bradcrumb a:hover {
-  color: #57cbcc;
+  color: #355e3b;
 }
 
 .slick-slide {
@@ -523,18 +530,19 @@ a:hover {
 }
 
 .navigation .navigation-menu li a.active {
-  color: #57cbcc;
+  color: #355e3b;
 }
 
 .navigation .navigation-menu li a {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   color: #737f8a;
 }
 
 .navigation .navigation-menu li a:hover,
 .navigation .navigation-menu li a:focus {
   background: transparent;
-  color: #57cbcc;
+  color: #355e3b;
 }
 
 .navigation .navbar-toggler {
@@ -557,7 +565,7 @@ a:hover {
 }
 
 .navbar-toggler:focus {
-  outline-color:  #57cbcc;
+  outline-color:  #355e3b;
 }
 
 .bg-1 {
@@ -597,7 +605,7 @@ a:hover {
 
 .hero-area .block .video-button {
   background: #fff;
-  color: #57cbcc;
+  color: #355e3b;
   display: inline-block;
   height: 60px;
   width: 60px;
@@ -681,6 +689,98 @@ a:hover {
 }
 
 /*=================================================================
+  Treks section
+==================================================================*/
+.trek .block {
+  background: #242930;
+  padding: 30px;
+  border-bottom: 2px solid transparent;
+  transition: .5s all;
+  margin-bottom: 20px;
+}
+
+.trek .block:hover {
+  border-bottom: 2px solid #355e3b;
+}
+
+.trek .block:hover .icon-box {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.trek .block .icon-box {
+  position: relative;
+  width: 160px;
+  height: 92.38px;
+  background-color: transparent;
+  margin: 46.19px auto 60px;
+  padding: 20px 0;
+  border-left: 2px solid rgba(236, 239, 241, 0.07);
+  border-right: 2px solid rgba(236, 239, 241, 0.07);
+  font-size: 50px;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+  transition-duration: 0.3s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.trek .block .icon-box:after,
+.trek .block .icon-box:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 113.14px;
+  height: 113.14px;
+  background-color: inherit;
+  left: 20.4315px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+}
+
+.trek .block .icon-box:before {
+  top: -56.5685px;
+  border-top: 2px solid rgba(236, 239, 241, 0.07);
+  border-right: 2px solid rgba(236, 239, 241, 0.07);
+}
+
+.trek .block .icon-box:after {
+  bottom: -56.5685px;
+  border-bottom: 2px solid rgba(236, 239, 241, 0.07);
+  border-left: 2px solid rgba(236, 239, 241, 0.07);
+}
+
+.trek .block .icon-box h3 {
+  color: #afbac4;
+}
+
+/*=================================================================
+  trek 2 section
+==================================================================*/
+.trek-2 .content-block {
+  padding: 40px;
+}
+
+.trek-2 .content-block .media {
+  margin-top: 25px;
+}
+
+.trek-2 .content-block .media .pull-left {
+  padding-right: 15px;
+}
+
+.trek-2 .content-block .media i {
+  font-size: 30px;
+  color: #355e3b;
+}
+
+.trek-2 .content-block .media h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*=================================================================
   About us section
 ==================================================================*/
 .about .block {
@@ -692,7 +792,7 @@ a:hover {
 }
 
 .about .block:hover {
-  border-bottom: 2px solid #57cbcc;
+  border-bottom: 2px solid #355e3b;
 }
 
 .about .block:hover .icon-box {
@@ -764,10 +864,35 @@ a:hover {
 
 .about-2 .content-block .media i {
   font-size: 30px;
-  color: #57cbcc;
+  color: #355e3b;
 }
 
 .about-2 .content-block .media h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*=================================================================
+  Camp section
+==================================================================*/
+.camp .content-block {
+  padding: 40px;
+}
+
+.camp .content-block .media {
+  margin-top: 25px;
+}
+
+.camp .content-block .media .pull-left {
+  padding-right: 15px;
+}
+
+.camp .content-block .media i {
+  font-size: 30px;
+  color: #355e3b;
+}
+
+.camp .content-block .media h4 {
   font-size: 16px;
   font-weight: 600;
 }
@@ -847,7 +972,7 @@ a:hover {
 .form-meghna input:hover,
 .form-meghna textarea:hover,
 #contact-submit:hover {
-  border-color: #57cbcc;
+  border-color: #355e3b;
 }
 
 .form-meghna ::placeholder
@@ -857,7 +982,7 @@ a:hover {
 
 #contact-submit {
   border: 1px solid rgba(236, 239, 241, 0.07);
-  background: #57cbcc;
+  background: #355e3b;
   padding: 12px 0;
   width: 100%;
   margin: 0;
@@ -945,7 +1070,7 @@ a:hover {
 }
 
 .price-title h3 {
-  color: #57cbcc;
+  color: #355e3b;
   margin: 0 0 10px;
   text-transform: uppercase;
 }
@@ -956,7 +1081,7 @@ a:hover {
 }
 
 .price-title .value {
-  color: #57cbcc;
+  color: #355e3b;
   font-size: 30px;
 }
 
@@ -1006,8 +1131,8 @@ a:hover {
 }
 
 .portfolio-filter button.mixitup-control-active {
-  border: 1px solid #57cbcc;
-  color: #57cbcc;
+  border: 1px solid #355e3b;
+  color: #355e3b;
 }
 
 .portfolio-items-wrapper .mix {
@@ -1070,7 +1195,7 @@ a:hover {
 }
 
 .portfolio-block .caption .search-icon {
-  background: #57cbcc;
+  background: #355e3b;
   width: 50px;
   height: 50px;
   color: #fff;
@@ -1116,13 +1241,13 @@ a:hover {
 
 .service-2 .service-item:hover i {
   background: #fff;
-  color: #57cbcc;
+  color: #355e3b;
 }
 
 .service-2 .service-item i {
   font-size: 30px;
   display: inline-block;
-  background: #57cbcc none repeat scroll 0 0;
+  background: #355e3b none repeat scroll 0 0;
   border-radius: 30px;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
@@ -1155,7 +1280,99 @@ a:hover {
 }
 
 .skill-bar .progress .progress-bar {
-  background: #57cbcc;
+  background: #355e3b;
+}
+
+/*=================================================================
+  Our Llamas
+==================================================================*/
+.llama {
+  background-color: #292F36;
+  margin-bottom: 10px;
+}
+
+.llama:hover .mask {
+  cursor: pointer;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: rotateY(0deg) scale(1, 1);
+  transform: rotateY(0deg) scale(1, 1);
+}
+
+.llama-photo {
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .llama-photo {
+    text-align: center;
+  }
+}
+
+.llama-photo:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.llama-photo img {
+  transition: all 0.4s ease 0s;
+}
+
+@media (max-width: 768px) {
+  .llama-photo img {
+    display: inline-block;
+  }
+}
+
+.llama-photo .mask {
+  background-color: #355e3b;
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all .5s ease-out 0s;
+  -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+.llama-photo .mask ul {
+  text-align: center;
+  position: relative;
+  top: 125px;
+}
+
+.llama-photo .mask ul li a {
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  width: 35px;
+}
+
+.llama-photo .mask ul li a:hover {
+  background-color: #fff;
+  color: #355e3b;
+  border: 1px solid transparent;
+}
+
+.llama-meta {
+  padding: 15px;
+}
+
+.llama-meta h4 {
+  margin: 0 0 5px;
+}
+
+.llama-meta span {
+  font-size: 12px;
 }
 
 /*=================================================================
@@ -1201,7 +1418,7 @@ a:hover {
 }
 
 .member-photo .mask {
-  background-color: rgba(87, 203, 204, 0.7);
+  background-color: #355e3b;
   position: absolute;
   text-align: center;
   height: 100%;
@@ -1234,7 +1451,7 @@ a:hover {
 
 .member-photo .mask ul li a:hover {
   background-color: #fff;
-  color: #57cbcc;
+  color: #355e3b;
   border: 1px solid transparent;
 }
 
@@ -1315,7 +1532,7 @@ a:hover {
 
 .owl-controls .owl-page.active span,
 .owl-controls .owl-page:hover span {
-  background-color: #57cbcc;
+  background-color: #355e3b;
   border: 2px solid transparent;
 }
 
@@ -1409,7 +1626,7 @@ a:hover {
 }
 
 .post-meta a {
-  color: #57cbcc;
+  color: #355e3b;
 }
 
 .post-meta>span {
@@ -1470,7 +1687,7 @@ a:hover {
 }
 
 .next-prev a:hover {
-  color: #57cbcc;
+  color: #355e3b;
 }
 
 .next-prev .prev-post i {
@@ -1493,7 +1710,7 @@ a:hover {
 }
 
 .social-profile ul li a i:hover {
-  color: #57cbcc;
+  color: #355e3b;
 }
 
 .comments-section {
@@ -1541,7 +1758,7 @@ a:hover {
 }
 
 .comment-wrap .media .media-heading a {
-  color: #57cbcc;
+  color: #355e3b;
   font-size: 13px;
 }
 
@@ -1568,7 +1785,7 @@ a:hover {
 .comment-reply-form input:focus,
 .comment-reply-form textarea:focus {
   box-shadow: none;
-  border: 1px solid #57cbcc;
+  border: 1px solid #355e3b;
 }
 
 .comment-reply-form textarea,
@@ -1658,22 +1875,36 @@ input#e-mail, #hidden_iframe {
   margin-bottom: 4px;
 }
 
+.social-icon ul li:hover a {
+  background-color: #355e3b;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.social-icon ul li:hover a i {
+  color: #fff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
 .social-icon ul li a {
   background-color: #26292e;
   border: 1px solid transparent;
   display: block;
   height: 70px;
   width: 70px;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   transition: all 400ms ease-out 0s;
 }
 
-.social-icon ul li a:hover{
-  background: #57cbcc;
-}
-
-.social-icon ul li a:hover i{
-  color: #fff;
-  opacity: 1;
+@media (max-width: 768px) {
+  .social-icon ul li a {
+    width: 55px;
+    height: 55px;
+  }
 }
 
 .social-icon ul li a i {
@@ -1683,7 +1914,17 @@ input#e-mail, #hidden_iframe {
   line-height: 70px;
   margin: 0;
   opacity: 0.3;
+  filter: alpha(opacity=30);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   transition: all 400ms ease-out 0s;
+}
+
+@media (max-width: 768px) {
+  .social-icon ul li a i {
+    line-height: 55px;
+    font-size: 25px;
+  }
 }
 
 .copyright {
@@ -1711,8 +1952,8 @@ input#e-mail, #hidden_iframe {
 }
 
 #scrollUp:hover {
-  background-color: #57cbcc;
-  border: 1px solid #57cbcc;
+  background-color: #355e3b;
+  border: 1px solid #355e3b;
 }
 
 /*=================================================================
@@ -2138,7 +2379,7 @@ blockquote {
 
 .form-control-meghna .form-control:focus
 {
-  border-color: #57cbcc;
+  border-color: #355e3b;
   box-shadow: 0 0 0 0.2rem rgba(0, 174, 255, 0.432);
 }
 
